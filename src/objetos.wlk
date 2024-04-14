@@ -27,17 +27,18 @@ object munieco{
 
 
 object placa {
-	var peso=300 
-	var color =
+	var peso
+	var color 
 	
-	method material(){ return cobre.material()}
+
 	method asignarColor(unColor){
-		 colores.nuevoColor(unColor)}
+		 color = unColor.color() }
 	method peso() {return peso}
 	method cambiarPeso(unPeso){ peso = unPeso}
 	
 	method colorPlaca() {return color}
 	method pesoPlaca() {return peso}
+	method material() {return cobre.material()}
 	
 }
 ////// materiales  
@@ -63,18 +64,18 @@ object vidrio{
 object cobre{
 	
 	const material= 'cobre'
-	method esMaterial(){return true}
+	method brilla(){return true}
 	method material(){ return material}
 
 }
 object madera{
 	const material= 'madera'
-	method esMaterial(){return true}
+	method brilla(){return false}
 	method material(){ return material}
 }
 object cuero{
 	const material= 'cuero'
-	method esMaterial(){return true}
+	method brilla(){return true}
 	method material(){ return material}
 }
 

@@ -14,3 +14,4 @@ object cosa {
 	method peso(unPeso){ peso= unPeso }
 	method peso() {return peso}
 }
+
