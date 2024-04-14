@@ -1,17 +1,26 @@
+import objetos.*
+
 object rosa{
-	var gusto= cosa.peso()
-	
-	method cambiarGusto(otraCosa){ gusto= otraCosa } 
-	method gusto(){return gusto}	 
-	method leGusta_(unaCosa){
-		return unaCosa.peso() <=2000 //engr
+	method leGusta_(unObjeto){
+		return unObjeto.peso() <= 2000
 	}
 }
 
-object cosa {
-	var peso = 3000 // gr
-	
-	method peso(unPeso){ peso= unPeso }
-	method peso() {return peso}
+
+object estefania{
+	method leGusta_(unObjeto){
+		return unObjeto.color().esFuerte()
+	}
 }
 
+object luisa{
+	method leGusta_(unObjeto){
+		return unObjeto.material().brilla()
+	}
+}
+
+object juan{
+	method leGusta_(unObjeto){
+		return (not unObjeto.color().esFuerte()) or ( unObjeto.peso() > 1200 and unObjeto.peso() < 1800 )
+	}
+}

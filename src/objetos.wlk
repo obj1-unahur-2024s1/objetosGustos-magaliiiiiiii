@@ -1,5 +1,5 @@
 ///// obj a considerar:
-
+import personas.*
 object remera{
 
 	method color() {return rojo.color() }
@@ -27,7 +27,7 @@ object munieco{
 
 
 object placa {
-	var peso
+	var peso=300 
 	var color 
 	
 
@@ -37,7 +37,7 @@ object placa {
 	method cambiarPeso(unPeso){ peso = unPeso}
 	
 	method colorPlaca() {return color}
-	method pesoPlaca() {return peso}
+	method agregarPeso(unPeso) {peso= peso + unPeso}
 	method material() {return cobre.material()}
 	
 }
