@@ -2,25 +2,27 @@
 import personas.*
 object remera{
 
-	method color() {return rojo.color() }
+	method color() {return rojo }
 	method peso() {return 800}
-	method material() {return material.lino()}
+	method material() {return material.lino()
+	
+	}
 	
 }
 object pelota {
-	method material(){return cuero.material()}
-	method color() {return pardo.color() }
+	method material(){return cuero}
+	method color() {return pardo }
 	method peso(){return 1300}
 }
 object biblioteca{
-	method color(){return verde.color()}
+	method color(){return verde}
 	//method material() {return }
 	method peso() {return 8000}
 }
 object munieco{
 	var peso=300  //gr
-	method color(){return celeste.color()}
-	method material(){return vidrio.material()}
+	method color(){return celeste}
+	method material(){return vidrio}
 	method peso() {return peso}
 	method cambiarPeso(unPeso){ peso=unPeso}
 }
@@ -36,9 +38,9 @@ object placa {
 	method peso() {return peso}
 	method cambiarPeso(unPeso){ peso = unPeso}
 	
-	method colorPlaca() {return color}
+	method color() {return color}
 	method agregarPeso(unPeso) {peso= peso + unPeso}
-	method material() {return cobre.material()}
+	method material() {return cobre}
 	
 }
 ////// materiales  
@@ -57,21 +59,21 @@ object lino{
 	
 }
 object vidrio{ 
-	const material= 'vidrio'
+
 	method esMaterial(){return true}
-	method material(){ return material}
+	method material(){ return vidrio}
 }
 object cobre{
 	
-	const material= 'cobre'
+	
 	method brilla(){return true}
-	method material(){ return material}
+	method material(){ return cobre}
 
 }
 object madera{
-	const material= 'madera'
+
 	method brilla(){return false}
-	method material(){ return material}
+	method material(){ return madera}
 }
 object cuero{
 	const material= 'cuero'

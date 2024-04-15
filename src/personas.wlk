@@ -21,6 +21,6 @@ object luisa{
 
 object juan{
 	method leGusta_(unObjeto){
-		return (not unObjeto.color().esFuerte()) or ( unObjeto.peso() > 1200 and unObjeto.peso() < 1800 )
+		return (not unObjeto.color().esFuerte()) or ( unObjeto.peso().between(1200, 1800) )
 	}
 }
