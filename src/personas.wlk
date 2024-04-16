@@ -15,7 +15,7 @@ object estefania{
 
 object luisa{
 	method leGusta_(unObjeto){
-		return unObjeto.material().brilla()
+		return unObjeto.estmaterial().brilla()
 	}
 }
 
@@ -23,4 +23,5 @@ object juan{
 	method leGusta_(unObjeto){
 		return (not unObjeto.color().esFuerte()) or ( unObjeto.peso().between(1200, 1800) )
 	}
+	
 }

@@ -4,17 +4,18 @@ object remera{
 
 	method color() {return rojo }
 	method peso() {return 800}
-	method material() {return material.lino()
+	method material() {return lino}
 	
 	}
 	
-}
+
 object pelota {
 	method material(){return cuero}
 	method color() {return pardo }
 	method peso(){return 1300}
 }
 object biblioteca{
+	method material() {return madera}
 	method color(){return verde}
 	//method material() {return }
 	method peso() {return 8000}
@@ -30,7 +31,7 @@ object munieco{
 
 object placa {
 	var peso=300 
-	var color 
+	var color= verde 
 	
 
 	method asignarColor(unColor){
@@ -56,11 +57,12 @@ object lino{
 	const material= 'lino'
 	method esMaterial(){return true}
 	method material(){ return material}
+	method brilla(){return false}
 	
 }
 object vidrio{ 
 
-	method esMaterial(){return true}
+	method brilla(){return true}
 	method material(){ return vidrio}
 }
 object cobre{
