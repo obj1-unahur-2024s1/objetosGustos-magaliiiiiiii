@@ -25,7 +25,7 @@ object munieco{
 	method color(){return celeste}
 	method material(){return vidrio}
 	method peso() {return peso}
-	method cambiarPeso(unPeso){ peso=unPeso}
+	method setPeso(unPeso){ peso=unPeso}
 }
 
 
@@ -37,7 +37,7 @@ object placa {
 	method asignarColor(unColor){
 		 color = unColor.color() }
 	method peso() {return peso}
-	method cambiarPeso(unPeso){ peso = unPeso}
+	method setPeso(unPeso){ peso = unPeso}
 	
 	method color() {return color}
 	method agregarPeso(unPeso) {peso= peso + unPeso}
@@ -132,7 +132,17 @@ object pardo{
 
 
 
-
+object cajita{
+	var objetoInterior
+	
+	
+	method setObjetonterior(objeto){ objetoInterior = objeto}
+	method peso(){return 400+objetoInterior.peso()}
+	
+	method color()=rojo
+	method material()= cobre
+	
+}
 
 
 //object muñeco {}
